@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <li v-for="book in books">{{book.title}} : {{book.author}}</li>
+    <ul v-for="book in books">{{book.title}} : {{book.author}}</ul>
   </div>
 </template>
 
@@ -14,18 +14,15 @@ export default {
       books: 
       [
         {
-          title:'The Old Man And The Sea', 
-          author: "Some Guy"
-        },
+          title: 'Self-Reliance',
+          author: 'Ralph Waldo Emerson'},
         {
-          title:'Clean Architecture', 
-          author: "Uncle Bob"
-        },
+          title: 'American Gods',
+          author: 'Neil Gaiman'},
         {
-          title:'Clean Code', 
-          author: "Robert C. Martin"
-        }
-      ]
+          title: 'Amusing Ourselves to Death',
+          author: 'Neil Postman'},
+]
     }
   }
 }
@@ -35,7 +32,7 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-li {
+ul {
   list-style-type: none;
   padding: 0;
   display: block;
